@@ -24,7 +24,6 @@ npm login --scope=ekkkt-group --auth-type=legacy --registry=https://npm.pkg.gith
 ```
 
 User: ekkkt-group
-Pass: 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
 
 ## Installation
 
