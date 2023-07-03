@@ -1,5 +1,5 @@
 {
-  "logo": { "text": "Hello work", "type": "link", "path": "index.html" },
+  "logo": { "text": "Hello", "type": "link", "path": "index.html" },
   "main":
     [
       { "text": "Tab", "type": "label" },
