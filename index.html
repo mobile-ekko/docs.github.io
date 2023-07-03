@@ -1,209 +1,179 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Cli |  </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
 
-  
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/docs.github.io/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/docs.github.io/images/favicon.ico">
+
     
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
 
-  
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
+  <meta name="generator" content="Hexo 6.3.0"></head>
+  <body>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+   <script>window.__INITIAL_STATE__ = {"page":{"path":"index.html","title":""},"data":{"navigation":{"logo":{"text":"Hello work","type":"link","path":"index.html"},"main":[{"text":"Tab","type":"label"},{"text":"Tab 1","type":"link","path":"swagger/tab_2.html"},{"text":"Tab 2","type":"link","path":"swagger/tab_1.html"},{"text":"SUPPORT AND FEEDBACK","type":"label"},{"text":"Raise an Issue on Github","type":"link","path":"https://github.com/mobile-ekko/docs.github.io/issues/new"}]}},"config":{"timezone":"","root":"/docs.github.io/","time_format":"HH:mm:ss","theme":"doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot=""><nav class="doc-navbar"><a href="/docs.github.io/index.html" class="doc-navbar__logo"><img src="/docs.github.io/images/logo.png" class="doc-navbar__logo__img"/><span class="doc-navbar__logo__text">Hello work</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h1 id="V99-Command-Line-Interface-CLI"><a href="#V99-Command-Line-Interface-CLI" class="headerlink" title="V99 Command Line Interface (CLI)"></a>V99 Command Line Interface (CLI)</h1><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>V99 CLI is a full system support for rapid V99 Mini App development, providing:<br>Interactive project mini app via package @v99-cli<br>A rich collection of official plugins integrating the tools in the V99 Open Platform &amp; Mini App ecosystem. Support a lot of commands to develop Mini App.</p>
+<p>Note: V99-CLI is required to log in by the portal account before using all commands.(Account test: Tester&#x2F;Tester123)</p>
+<h2 id="Environment"><a href="#Environment" class="headerlink" title="Environment"></a>Environment</h2><ul>
+<li>Node(&gt;&#x3D;v16.0.0)</li>
+<li>Yarn(&gt;&#x3D;1.22.17)</li>
+<li>Npm(&gt;&#x3D;9.4.0)</li>
+<li>Ruby(&#x3D;2.7.5)</li>
+</ul>
+<h2 id="Login-private-npm-to-install-cli"><a href="#Login-private-npm-to-install-cli" class="headerlink" title="Login private npm to install cli"></a>Login private npm to install cli</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm login --scope=ekkkt-group --auth-type=legacy --registry=https://npm.pkg.github.com</span><br></pre></td></tr></table></figure>
+
+<p>User: ekkkt-group<br>Pass: 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</p>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --location=global @ekkkt-group/v99-cli</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="Uninstall"><a href="#Uninstall" class="headerlink" title="Uninstall"></a>Uninstall</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall --location=global @ekkkt-group/v99-cli</span><br></pre></td></tr></table></figure>
+
+<p>if not remove this package, and use the command below:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rm -rf /usr/local/bin/v99-cli</span><br></pre></td></tr></table></figure>
+
+<h2 id="Commands"><a href="#Commands" class="headerlink" title="Commands"></a>Commands</h2><p>Below is the list of commands currently supported by V99 CLI:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Option</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>v99-cli --help</code></td>
+<td></td>
+<td></td>
+<td>Show all v99 cli commands</td>
+</tr>
+<tr>
+<td><code>v99-cli doctor</code></td>
+<td></td>
+<td></td>
+<td>Help to check your systems environment to run v99 CLI</td>
+</tr>
+<tr>
+<td><code>v99-cli link</code></td>
+<td></td>
+<td></td>
+<td>Open the browser that logged portal to authorize request login from V99 CLI</td>
+</tr>
+<tr>
+<td><code>v99-cli login</code></td>
+<td>-p(–password)<arg><br/>-u(–user) <arg></td>
+<td></td>
+<td>Login by user name and password</td>
+</tr>
+<tr>
+<td><code>v99-cli logout</code></td>
+<td></td>
+<td></td>
+<td>Logout current user</td>
+</tr>
+<tr>
+<td><code>v99-cli refresh</code></td>
+<td></td>
+<td></td>
+<td>Refresh token npm</td>
+</tr>
+<tr>
+<td><code>v99-cli app help</code></td>
+<td></td>
+<td></td>
+<td>Get help to using v99 commands for development app</td>
+</tr>
+<tr>
+<td><code>v99-cli app init</code></td>
+<td>-a(–appname) <arg><br />-v(–version)</td>
+<td>ProjectName<br/>0.0.4</td>
+<td>Create a new mini app</td>
+</tr>
+<tr>
+<td><code>v99-cli app build</code></td>
+<td>-f(–force)<br />–release<br />–debug<br />–platform <arg></td>
+<td>false<br />true<br />false<br />ios</td>
+<td>Request Portal to bundle mini app, after that download and load app in the Dev tool</td>
+</tr>
+<tr>
+<td><code>v99-cli app run</code></td>
+<td>–device<br />–simulator<br />–android<br/>–ios</td>
+<td><br /><br />false<br />true<br /></td>
+<td>Run a mini app by independence with Dev Tool(run server: <a target="_blank" rel="noopener" href="http://localhost:8081/">http://localhost:8081</a>)</td>
+</tr>
+<tr>
+<td><code>v99-cli app start</code></td>
+<td>-p(–port) <arg></td>
+<td>8181</td>
+<td>Start a server and gen QR code to load mini app via dev tool</td>
+</tr>
+<tr>
+<td><code>v99-cli app upgrade-version-package</code></td>
+<td>-n(–name) <arg><br />-all(–all)<br />-v99(–v99)</td>
+<td></td>
+<td>Upgrade the packages to the latest version for the packages supported by the Super app or packages of the ecosystem V99</td>
+</tr>
+<tr>
+<td><code>v99-cli app lint</code></td>
+<td></td>
+<td></td>
+<td>Check source mini app with full rules of v99</td>
+</tr>
+</tbody></table>
+<h3 id="Optional-Using-a-specific-version"><a href="#Optional-Using-a-specific-version" class="headerlink" title="[Optional] Using a specific version"></a>[Optional] Using a specific version</h3><p>If you want to start a new project mini app with a specific version, you can use the –version(-v) argument:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">v99-cli app init --appname=ProjectName -v=X.XX.X</span><br></pre></td></tr></table></figure>
+
+<h3 id="Optional-Upgrade-a-specific-package-version"><a href="#Optional-Upgrade-a-specific-package-version" class="headerlink" title="[Optional] Upgrade a specific package version"></a>[Optional] Upgrade a specific package version</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">v99-cli app init -n=PackageName@versionSupport</span><br></pre></td></tr></table></figure>
+
+<h3 id="Optional-Run-mini-app-using-a-specific-device"><a href="#Optional-Run-mini-app-using-a-specific-device" class="headerlink" title="[Optional] Run mini app using a specific device"></a>[Optional] Run mini app using a specific device</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ios: v99-cli app run --simulator=&#x27;simulator name&#x27;</span><br><span class="line">android: v99-cli app run --android --device=&#x27;deviceId&#x27;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Dev-Node"><a href="#Dev-Node" class="headerlink" title="Dev Node"></a>Dev Node</h3><ul>
+<li>Change endpoint tại <a target="_blank" rel="noopener" href="https://github.com/ekkkt-group/mobile-v99-cli-config/blob/main/config.json">config.json</a></li>
+<li>Change token npm <a target="_blank" rel="noopener" href="https://github.com/ekkkt-group/mobile-v99-cli-config/blob/main/refresh_token.json">refresh_token</a></li>
+<li>Change login data <a target="_blank" rel="noopener" href="https://github.com/ekkkt-group/mobile-v99-cli-config/blob/main/login_tester.json">login_tester</a> <a target="_blank" rel="noopener" href="https://github.com/ekkkt-group/mobile-v99-cli-config/blob/main/login_tester123.json">login_tester_123</a>base64 data <a target="_blank" rel="noopener" href="https://github.com/ekkkt-group/mobile-v99-cli-config/blob/main/template_config.json">template</a></li>
+<li>Change support package at <a target="_blank" rel="noopener" href="https://github.com/ekkkt-group/mobile-v99-cli-config/blob/main/support_package.json">link</a></li>
+<li>V99-cli link(goto brower with hard <a target="_blank" rel="noopener" href="https://example.com/">link</a> and hard token&#x3D;”token”)</li>
+</ul>
+
+        <div id="react-support-footer-root"></div>
       </div>
     </div>
   </div>
-</header>
+</div>
 
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/07/03/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-07-03T06:03:28.799Z" itemprop="datePublished">2023-07-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/07/03/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/07/03/hello-world/" data-id="cljmggnfd0000hsn11mshbs0d" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">July 2023</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/07/03/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
     
 
 
-<script src="/js/jquery-3.6.4.min.js"></script>
+    
 
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
 
+    <!-- js source  -->
+    <script src="/docs.github.io/script/doc.js"></script>
 
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+    
 
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
+  </body>
 </html>
