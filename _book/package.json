@@ -1,0 +1,10 @@
+{
+    "name": "Test",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "canvas": "^2.11.2",
+        "gitbook-plugin-include-codeblock": "^3.2.3",
+        "gitbook-plugin-todo": "^0.1.3"
+    }
+}
