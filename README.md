@@ -30,17 +30,23 @@ pip install -r requirements.txt
 
 
 ## Run test
-
+``` sh
+make all
+```
 ```sh
 make serve
 ```
 
 ## Build test
-
+``` sh
+make all
+```
 ``` sh
 make build
 ```
 
+!!! Warning "Dont create index.md in child folder"
+## File index.md trong thư mục được tạo tự động, tạo thêm section thì add thêm tại file Makefile
 ## Auto deploy when push code to brach main. Change congig in [Link](./.github/workflows/pages.yml)
 
 ### Tab in table <small>required</small> { #Tab in table data-toc-label="Tab in table" }

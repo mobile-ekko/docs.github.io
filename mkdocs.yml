@@ -115,5 +115,16 @@ nav:
       - Environment: cli/environment.md
       - Installation: cli/installation.md
       - Commands: cli/commands.md
+      - Api: cli/api.md
       - Changelog:
           - changelog/cli.md
+  - V99 Review:
+      - review/index.md
+      - Getting started: review/getting-started.md
+      - Environment: review/environment.md
+      - Installation: review/installation.md
+      - Commands: review/commands.md
+      - Main features: review/main-features.md
+      - Config rule: review/config-rule.md
+      - Changelog:
+          - changelog/review.md
