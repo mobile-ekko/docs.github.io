@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../getting-started/">
+        <link rel="prev" href="../environment/">
       
       
-        <link rel="next" href="../environment/">
+        <link rel="next" href="../commands/">
       
       <link rel="icon" href="../../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
@@ -229,7 +229,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../getting-started/" class="md-tabs__link md-tabs__link--active">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
         V99 Cli
       </a>
     </li>
@@ -302,6 +302,10 @@
       
         
           
+            
+          
+        
+          
         
           
         
@@ -313,10 +317,16 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-          V99 Cli
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">V99 Cli</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
@@ -326,6 +336,8 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+          
+            
               
   
   
@@ -333,6 +345,20 @@
     <li class="md-nav__item">
       <a href="../getting-started/" class="md-nav__link">
         Getting started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../environment/" class="md-nav__link">
+        Environment
       </a>
     </li>
   
@@ -414,20 +440,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../environment/" class="md-nav__link">
-        Environment
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../commands/" class="md-nav__link">
         Commands
       </a>
@@ -449,7 +461,7 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
       
       
         
@@ -457,13 +469,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
           Changelog
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_2_5">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_6">
           <span class="md-nav__icon md-icon"></span>
           Changelog
         </label>
@@ -559,17 +571,17 @@
 
 
 <h1 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h1>
-<h3 id="login">login <small>required</small><a class="headerlink" href="#login" title="Permanent link">&para;</a></h3>
+<h3 id="login"><strong>login</strong> <small>required</small><a class="headerlink" href="#login" title="Permanent link">&para;</a></h3>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm login --scope=ekkkt-group --auth-type=legacy --registry=https://npm.pkg.github.com
 </span></code></pre></div>
 <details class="question">
 <summary>How to get an token npm?</summary>
 <p>Login in portal v99 to get user and password</p>
 </details>
-<h3 id="install">install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h3>
+<h3 id="install"><strong>install</strong><a class="headerlink" href="#install" title="Permanent link">&para;</a></h3>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>npm install --location=global @ekkkt-group/v99-cli
 </span></code></pre></div>
-<h3 id="uninstall">uninstall<a class="headerlink" href="#uninstall" title="Permanent link">&para;</a></h3>
+<h3 id="uninstall"><strong>uninstall</strong><a class="headerlink" href="#uninstall" title="Permanent link">&para;</a></h3>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>npm uninstall --location=global @ekkkt-group/v99-cli
 </span></code></pre></div>
 
@@ -602,7 +614,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../getting-started/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Getting started" rel="prev">
+          <a href="../environment/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Environment" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -611,20 +623,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Getting started
+                Environment
               </div>
             </div>
           </a>
         
         
           
-          <a href="../environment/" class="md-footer__link md-footer__link--next" aria-label="Next: Environment" rel="next">
+          <a href="../commands/" class="md-footer__link md-footer__link--next" aria-label="Next: Commands" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Environment
+                Commands
               </div>
             </div>
             <div class="md-footer__button md-icon">
