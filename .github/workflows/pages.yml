@@ -28,7 +28,8 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material
-      - run: mkdocs build
+      - run: pip install -r requirements.txt
+      - run: mkdocs build --config-file mkdocs.insiders.yml
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

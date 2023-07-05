@@ -110,9 +110,10 @@ markdown_extensions:
 nav:
   - Home: index.md
   - V99 Cli:
+      - cli/index.md
       - Getting started: cli/getting-started.md
-      - Installation: cli/installation.md
       - Environment: cli/environment.md
+      - Installation: cli/installation.md
       - Commands: cli/commands.md
       - Changelog:
           - changelog/cli.md
