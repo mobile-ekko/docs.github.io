@@ -28,7 +28,7 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material
-      - run: make all
+      - run: make gitall
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

@@ -1,5 +1,4 @@
 build:
-	make all
 	mkdocs build
 
 serve: 
