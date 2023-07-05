@@ -1,5 +1,0 @@
-INHERIT: mkdocs.yml
-
-plugins:
-  - include-markdown
-  - search

@@ -1,4 +1,6 @@
-# Commands
+## [Commands]
+
+[Commands]: commands.md
 
 ### __Help__ { #Help data-toc-label="Help" }
 Show all v99-cli support commands
@@ -47,7 +49,7 @@ v99-cli logout
 ```
 
 ### __Refresh__ { #Refresh data-toc-label="Refresh" }
-Refresh token npm
+Refresh user info
 ``` sh
 v99-cli refresh
 ```
@@ -92,11 +94,11 @@ Request Portal to bundle mini app, after that download and load app in the Dev t
 #### __run__ { #run data-toc-label="run" }
 Run a mini app by independence with Dev Tool(run server: http://localhost:8081)
 
-1. run android
++ run android
 ``` sh
 v99-cli app run --device <device Id> --android
 ```
-2. run ios
++ run ios
 ``` sh
 v99-cli app run --simulator <simulator name> --ios
 ```
@@ -120,7 +122,7 @@ Start a server and gen QR code to load the mini app via dev tool
 #### __upgrade-version-package__ { #upgrade-version-package data-toc-label="upgrade-version-package" }
 Upgrade the packages to the latest version for the packages supported by the Super app or packages of the ecosystem V99
 
-1. Update package name
++ Update package name
 === "Short argv"
     ``` sh
     v99-cli app upgrade-version-package -n <packagename>
@@ -129,37 +131,16 @@ Upgrade the packages to the latest version for the packages supported by the Sup
     ``` sh
     v99-cli app upgrade-version-package -name <packagename>
     ```
-1. Update v99 packages
++ Update v99 packages
 ``` sh
 v99-cli app upgrade-version-package --v99
 ```
-1. Update all packages 
-``` sh
-v99-cli app upgrade-version-package --all
-```
-
-#### __upgrade-version-package__ { #upgrade-version-package data-toc-label="upgrade-version-package" }
-Upgrade the packages to the latest version for the packages supported by the Super app or packages of the ecosystem V99
-
-1. Update package name
-=== "Short argv"
-    ``` sh
-    v99-cli app upgrade-version-package -n <packagename>
-    ```
-=== "Long argv"
-    ``` sh
-    v99-cli app upgrade-version-package -name <packagename>
-    ```
-2. Update v99 packages
-``` sh
-v99-cli app upgrade-version-package --v99
-```
-3. Update all packages 
++ Update all packages 
 ``` sh
 v99-cli app upgrade-version-package --all
 ```
 #### __lint__ { #lint data-toc-label="lint" }
-Check source mini app with full rules of v99
+Double-check the source code of the mini app before requesting to publish the app to the store
 
 ``` sh
 v99-cli app lint

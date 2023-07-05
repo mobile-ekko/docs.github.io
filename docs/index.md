@@ -1,28 +1,6 @@
-# Home
+# Guideline documents to develop Mini App
 
-V99 [V99]
+## [V99 Command Line Interface (CLI)]
+[V99 Command Line Interface (CLI)]: cli/getting-started.md
 
-  [V99]: https://v99.com
-
-## Installation
-
-### Node <small>required</small> { #Node data-toc-label="Node" }
-
-
-=== "Latest"
-
-    ``` sh
-    brew install node
-    ```
-
-=== "16.x"
-
-    ``` sh
-    brew install node@16.x # (1)!
-    ```
-
-    1.  Required node 16 or newer.
-
-Note
-
----
+V99 CLI is a comprehensive support system for the rapid development of V99 Mini App applications. It enables interaction with mini-app projects or portals through the v99-cli package.

@@ -108,7 +108,7 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Home: index.md
+  - Guideline documents to develop Mini App: index.md
   - V99 Cli:
       - cli/index.md
       - Getting started: cli/getting-started.md

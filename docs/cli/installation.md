@@ -1,6 +1,7 @@
-# Installation
+## [Installation]
+[Installation]: installation.md
 
-### __login__ <small>required</small> { #login data-toc-label="login npm" }
+### __login__ <small>required</small> { #login data-toc-label="login" }
 
 ```
 npm login --scope=ekkkt-group --auth-type=legacy --registry=https://npm.pkg.github.com
